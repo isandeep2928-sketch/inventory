@@ -1,0 +1,211 @@
+/* ================================
+   INVENTORY MANAGEMENT SYSTEM UI
+   Modern Colorful Design (2025)
+==================================*/
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* ================================
+   HEADER
+==================================*/
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #1976d2;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   FORM SECTION
+==================================*/
+#inventory-form-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #2196f3;
+}
+
+#inventory-form-section h2 {
+  color: #1565c0;
+  margin-bottom: 15px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 6px rgba(33, 150, 243, 0.3);
+  outline: none;
+}
+
+/* ================================
+   BUTTONS
+==================================*/
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+#save-btn {
+  background-color: #1e88e5;
+  color: #fff;
+}
+
+#save-btn:hover {
+  background-color: #1565c0;
+}
+
+#cancel-btn {
+  background-color: #9e9e9e;
+  color: #fff;
+}
+
+#cancel-btn:hover {
+  background-color: #757575;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ================================
+   TABLE SECTION
+==================================*/
+#inventory-table-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  border-left: 6px solid #4caf50;
+}
+
+#inventory-table-section h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+tr:hover {
+  background-color: #f1f8e9;
+}
+
+.action-btn {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+
+.edit-btn {
+  background-color: #43a047;
+}
+
+.edit-btn:hover {
+  background-color: #2e7d32;
+}
+
+.delete-btn {
+  background-color: #e53935;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+/* ================================
+   FOOTER
+==================================*/
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #555;
+  padding-top: 10px;
+  border-top: 2px solid #eee;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+==================================*/
+@media(max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
