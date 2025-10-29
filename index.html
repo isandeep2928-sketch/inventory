@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory Management System</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Inventory Management System</h1>
+  </header>
+
+  <main>
+    <!-- Add / Update Form -->
+    <section id="inventory-form-section">
+      <h2 id="form-title">Add Inventory Item</h2>
+      <form id="inventory-form">
+        <input type="hidden" id="item-id">
+
+        <label>Product Name*</label>
+        <input type="text" id="product-name" required>
+
+        <label>SKU*</label>
+        <input type="text" id="sku" required>
+
+        <label>Category</label>
+        <input type="text" id="category">
+
+        <label>Quantity*</label>
+        <input type="number" id="quantity" required min="0">
+
+        <label>Supplier</label>
+        <input type="text" id="supplier">
+
+        <label>Price*</label>
+        <input type="number" id="price" required step="0.01">
+
+        <label>Location</label>
+        <input type="text" id="location">
+
+        <button type="submit" id="save-btn">Add Item</button>
+        <button type="button" id="cancel-btn" class="hidden">Cancel</button>
+      </form>
+    </section>
+
+    <!-- Inventory Table -->
+    <section id="inventory-table-section">
+      <h2>Current Inventory</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>SKU</th>
+            <th>Category</th>
+            <th>Qty</th>
+            <th>Supplier</th>
+            <th>Price</th>
+            <th>Location</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-body">
+          <!-- Dynamic rows go here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Inventory Management System | Project - 2</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
